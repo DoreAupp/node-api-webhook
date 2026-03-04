@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 app.use(express.json());
 
-app.get("/", (req, res) => res.send("API is running ✅"));
+app.get("/", (req, res) => res.send("API is running, yessirrrr 🫨"));
 
 app.get("/api/items", (req, res) => {
   res.json([
