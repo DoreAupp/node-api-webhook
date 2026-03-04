@@ -77,7 +77,7 @@ app.delete("/api/items/:id", (req, res) => {
     return res.status(404).json({ message: "Not found" });
   }
 
-  res.status(204).send();
+  return res.status(200).json({ message: `Item ${id} deleted successfully` });
 });
 
 const PORT = process.env.PORT || 3000;
